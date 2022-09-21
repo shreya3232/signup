@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <style>
+        body {
+            font-style: italic;
+            background-color: rgb(230, 215, 205);
+            margin: 0%;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 25px;
+        }
+        
+        h2 {
+            text-align: center;
+            background-color: bisque;
+        }
+        
+        td {
+            padding: 5px;
+            font-size: 23px;
+            color: black;
+        }
+        
+        input {
+            border-radius: 10px;
+            height: 30px;
+        }
+        
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 1px solid aqua;
+        }
+        
+        textarea {
+            border-radius: 10px;
+        }
+        
+        .button {
+            background-color: rgb(230, 26, 26);
+            color: white;
+            font-size: 15px;
+            padding: 0px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <forms>
+        <div id="personal-information">
+            <h2>personal-information</h2>
+            <table width=100%>
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" size="25">
+                    </td>
+                    <td>Last Name</td>
+                    <td><input type="text" size="25"></td>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td>father Name</td>
+                    <td><input type="text" size="25"></td>
+                    <td>mother Name</td>
+                    <td><input type="text" size="25"></td>
+                </tr>
+                <tr>
+                    <td> Address</td>
+                    <td><textarea cols="25" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" size="25"></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Pincode</td>
+                    <td><input type="number" size="25"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nationality</td>
+                    <td><select>
+                        <option>India</option>
+                        <option>America</option>
+                        <option>Australia</option>
+                        <option>South-Africa</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td><input type="text" size="25"></td>
+                </tr>
+            </table>
+        </div>
+        <!--Educational details-->
+        <div id="educational details">
+            <h2>Educational Details</h2>
+            <table width=100%>
+                <tr>
+                    <td>S.NO</td>
+                    <td>Qualification</td>
+                    <td>Institute/University</td>
+                    <td>Year Of Passing</td>
+                    <td>Marks(%)</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="month" size="25"></td>
+                    <td><input type="number" min="0" max="100"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="month" size="25"></td>
+                    <td><input type="number" min="0" max="100"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="month" size="25"></td>
+                    <td><input type="number" min="0" max="100"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="month" size="25"></td>
+                    <td><input type="number" min="0" max="100"></td>
+                </tr>
+            </table>
+
+        </div>
+        <!--Work-experince-->
+        <div id="work-experience">
+            <h2>Work-Experience</h2>
+            <table width=100%>
+                <tr>
+                    <td>SNO</td>
+                    <td>Company Name</td>
+                    <td>Work/Role</td>
+                    <td colspan="2">Duration(from-to )</td>
+                    <td>About Your Role</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="text" size="25"></td>
+                    <td><input type="month" size="25"></td>
+                    <td><input type="month" size="25"></td>
+                    <td><textarea cols="25" rows="5"></textarea></td>
+
+                </tr>
+
+            </table>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                    <input type="submit" name="submit" size="20" value="SUBMIT">
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </div>
+        </form>
+</body>
+
+</html>
